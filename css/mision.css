@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: dimgray;
+}
+
+/*=======================
+ adding style to about-1 
+=======================*/
+
+.about-1{
+    margin: 30px;
+    padding: 5px;
+}
+.about-1 h1{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.about-1 p{
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+}
+
+/*===========================
+ adding style to about items 
+============================*/
+
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 80px 30px;
+    box-shadow: 0 0 9px rgba(0,0,0.6);
+}
+
+/*======================================
+adding style to the icons(book,globe,pencil)
+=========================================*/
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+}
+
+/*======================================
+adding style to h3(heading 3) of each item 
+=========================================*/
+.about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/*======================================
+styling the hr (the blue line in between)
+=========================================*/
+.about-item hr{
+    width: 46px;
+    height: 3px;
+    background-color: #5fbff9;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+}
+
+/*========================================
+hover means when you put your cursor over it
+=========================================*/
+.about-item:hover{
+    background-color: #5fbff9;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+.about-item:hover hr{
+    background-color: #fff;
+}
+
+/*==============================================================================
+translate Y: move along the Y axis, negative(-20) moves it up, while positive(20) moves in down by  
+================================================================================*/
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+    transition: all 400ms ease-in-out;
+}
+
+.footer{
+    background-color: #1D293F;
+  }
+  
+  .footer__title{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .footer__title, .footer__newsletter{
+    color: #fff;
+  }
+  
+  
+  .footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 60px;
+  }
+  
+  .nav--footer{
+    padding-bottom: 20px;
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100%;
+  }
+  
+  .nav__link--footer{
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer__inputs{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .footer__input{
+    background-color: #fff;
+    height: 50px;
+    display: block;
+    padding-left: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 16px;
+  }
+  
+  .footer__submit{
+    margin-left: auto;
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px ;
+    background-color: #2091F9;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .footer__copy{
+    --padding-container: 30px 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer__copyright{
+    font-weight: 300;
+  }
+  
+  .footer__icons{
+    margin-bottom: 10px;
+  }
+  
+  .footer__img{
+    width: 30px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
