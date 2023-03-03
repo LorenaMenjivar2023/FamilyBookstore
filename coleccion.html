@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla"  />
+    <title>vanilla Javascript</title>
+    
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/cole.css" />
+  </head>
+  <body>
+    <header class="container-fluid bg-dark position-sticky top-0">
+      <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+      >
+        
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Coleccion</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Carrito</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Producto removido!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+        1
+      </div>
+      <div
+        class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+        <h2 class="h4 m-4 text-primary">Colecciones</h2>
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Una habitacion propia</h5>
+              <img src="./img/harry-potter-la-coleccic3b3n-completa.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Coleccion Completa</p>
+                <h5 class="text-primary">Precio: <span class="precio">$90</span></h5>
+                <div class="d-grid gap-2">
+                  <a href="HarryPotter.html" class="nav__links">Ver Coleccion</a>
+                  
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">El señor de los anillos</h5>
+              <img src="./img/losanillos.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Coleccion Completa </p>
+                <h5 class="text-primary">Precio: <span class="precio">$60</span></h5>
+                <div class="d-grid gap-2">
+                  <a href="anillos.html" class="nav__links">Ver Coleccion</a>
+                  <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Cincuenta Sombras de Grey</h5>
+              <img src="./img/5osombras.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Coleccion completa</p>
+                <h5 class="text-primary">Precio: <span class="precio">$80</span></h5>
+                <div class="d-grid gap-2">
+                  <a href="50Sombras.html" class="nav__links">Ver Coleccion</a>
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Anna Kadabra</h5>
+              <img src="./img/AnaKadabra.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Coleccion completa</p>
+                <h5 class="text-primary">Precio: <span class="precio">$85</span></h5>
+                <div class="d-grid gap-2">
+                  <a href="kadabra.html" class="nav__links">Ver Coleccion</a>
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">El diario de Gred</h5>
+              <img src="./img/gred.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Coleccion completa</p>
+                <h5 class="text-primary">Precio: <span class="precio">$90</span></h5>
+                <div class="d-grid gap-2">
+                  <a href="mogli.html" class="nav__links">Ver Coleccion</a>
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Las aventuras de Pinocho</h5>
+              <img src="./img/pinocho.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Coleccion completa</p>
+                <h5 class="text-primary">Precio: <span class="precio">$89</span></h5>
+                <div class="d-grid gap-2">
+                  <a href="pinocho.html" class="nav__links">Ver Coleccion</a>
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">After</h5>
+              <img src="./img/after.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Coleccion completa</p>
+                <h5 class="text-primary">Precio: <span class="precio">$50</span></h5>
+                <div class="d-grid gap-2">
+                  <a href="after.html" class="nav__links">Ver Coleccion</a>
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">La panza es primero</h5>
+              <img src="./img/panza.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Coleccion completa</p>
+                <h5 class="text-primary">Precio: <span class="precio">$95</span></h5>
+                <div class="d-grid gap-2">
+                <a href="panza.html" class="nav__links">Ver Coleccion</a>
+
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          
+        
+          
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <a href="compra.html" class="nav__links">COMPRAR</a>
+          
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+    <footer class="footer">
+      <section class="footer__container container">
+          <nav class="nav nav--footer">
+              <h2 class="footer__title">Family BookStore</h2>
+
+              <ul class="nav__link nav__link--footer">
+                  <li class="nav__items">
+                      <a href="#" class="nav__links">Inicio</a>
+                  </li>
+                  <li class="nav__items">
+                      <a href="#" class="nav__links">Contacto</a>
+                  </li>
+                  <li class="nav__items">
+                      <a href="#" class="nav__links"></a>
+                  </li>
+                  <li class="nav__items">
+                      <a href="#" class="nav__links"></a>
+                  </li>
+              </ul>
+          </nav>
+
+          <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+              <h2 class="footer__newsletter">Suscribete a nuestra pagina</h2>
+              <div class="footer__inputs">
+                  <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                  <input type="submit" value="Registrate" class="footer__submit">
+              </div>
+          </form>
+      </section>
+
+      <section class="footer__copy container">
+          <div class="footer__social">
+              <a href="#" class="footer__icons"><img src="./img/facebook.svg" alt="icons" class="footer__img"></a>
+              <a href="#" class="footer__icons"><img src="./img/twitter.svg" alt="icons" class="footer__img"></a>
+              <a href="#" class="footer__icons"><img src="./img/youtube.svg" alt="icons"  class="footer__img"></a>
+          </div>
+
+          <h3 class="footer__copyright">Derechos reservados &copy; Family Bookstore</h3>
+      </section>
+  </footer>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
